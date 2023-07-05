@@ -1,0 +1,56 @@
+============================
+How to Use 1-reverse_string.py
+============================
+
+This module defines a reverse string function ``reverse_string(string)``.
+
+Usage
+=====
+``reverse_string(...)`` returns a reversed string of
+``string`` .
+
+::
+
+    >>> reverse_string = __import__('1-reverse_string').reverse_string
+    >>> print(reverse_string("Hello"))
+    olleH
+
+::
+
+    >>> print(reverse_string("Samuel Ogboye"))
+    eyobgO leumaS
+
+::
+
+    >>> print(reverse_string(""))
+    Traceback (most recent call last):
+    ValueError: string can't be empty
+
+
+::
+
+    >>> print(reverse_string())
+    Traceback (most recent call last):
+    TypeError: reverse_string() missing 1 required positional argument: 'string'
+
+
+The parameters ``string`` must be string. If the parameter is
+not a string, a TypeError is raised.
+
+::
+
+    >>> print(reverse_string([[1, 2]]))
+    Traceback (most recent call last):
+    TypeError: string must be a Str
+
+::
+
+    >>> print(reverse_string(1))
+    Traceback (most recent call last):
+    TypeError: string must be a Str
+
+::
+
+    >>> print(reverse_string(2, 3))
+    Traceback (most recent call last):
+    TypeError: reverse_string() takes 1 positional argument but 2 were given
