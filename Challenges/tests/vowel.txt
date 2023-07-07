@@ -1,0 +1,70 @@
+============================
+How to Use count_vowels.py
+============================
+
+This module defines a count vowel  function ``count_vowel(string)``.
+
+Usage
+=====
+``count_vowels(...)`` returns the number of vowels in ``string`` .
+
+::
+
+    >>> count_vowels = __import__('count_vowels').count_vowels
+    >>> print(count_vowels("Hello"))
+    2
+
+::
+
+    >>> print(count_vowels("Samuel Ogboye"))
+    6
+
+::
+
+    >>> print(count_vowels("Vowels are important!"))
+    7
+
+::
+
+    >>> print(count_vowels("AaEeIiOoUu"))
+    10
+
+
+::
+
+    >>> print(count_vowels(""))
+    0
+
+::
+
+    >>> print(count_vowels("b"))
+    0
+
+
+Can work with numbers and non-alphanumeric characters so far they are in string format
+::
+
+    >>> print(count_vowels("I know 3 programming languages"))
+    9
+
+::
+
+    >>> print(count_vowels("Python is an Object-Oriented-Programming(OOP) Language"))
+    18
+
+Invalid Parameters
+==================
+The parameters ``string`` must be string. If the parameter is
+not a string, a TypeError is raised.
+
+::
+
+    >>> count_vowels(123)
+    Traceback (most recent call last):
+    TypeError: The input should be a string.
+
+::
+
+    >>> count_vowels([1, 2, 4])
+    Traceback (most recent call last):
+    TypeError: The input should be a string.
